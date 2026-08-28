@@ -205,6 +205,30 @@ nav.rail{
   overflow-x:auto;
 }
 
+.site-nav{
+  background:var(--field-green);
+  border-bottom:1px solid rgba(255,253,246,0.1);
+}
+
+.site-nav-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:9px 24px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.site-nav-inner a{
+  font-size:12.5px;
+  font-weight:600;
+  color:rgba(255,253,246,0.75);
+  text-decoration:none;
+}
+
+.site-nav-inner a:hover{ color:var(--gold-soft); }
+.site-nav-inner a.current{ color:var(--gold-soft); font-weight:700; }
+
 .rail a{
   font-size:13px;
   font-weight:500;
@@ -550,6 +574,18 @@ input:focus-visible{
 </header>
 
 
+<!-- ================= SITE NAV ================= -->
+
+<nav class="site-nav" aria-label="Farmer Community site">
+  <div class="site-nav-inner">
+    <a href="https://chinatsvi.github.io/farmers-community/">Home</a>
+    <a class="current" href="https://chinatsvi.github.io/farmer-community-Help-FAQ/">Help</a>
+    <a href="https://chinatsvi.github.io/farmer-community-privacy-policy/">Privacy</a>
+    <a href="https://chinatsvi.github.io/farmer-community-terms/">Terms</a>
+    <a href="https://chinatsvi.github.io/farmer-community-contact-us/">Contact</a>
+  </div>
+</nav>
+
 <!-- ================= NAVIGATION ================= -->
 
 <nav class="rail" aria-label="FAQ categories">
@@ -842,8 +878,10 @@ input:focus-visible{
     </div>
 
     <div class="footer-links">
+      <a href="https://chinatsvi.github.io/farmers-community/" target="_blank" rel="noopener">Home</a>
       <a href="https://chinatsvi.github.io/farmer-community-privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
       <a href="https://chinatsvi.github.io/farmer-community-terms/" target="_blank" rel="noopener">Terms of Service</a>
+      <a href="https://chinatsvi.github.io/farmer-community-contact-us/" target="_blank" rel="noopener">Contact Us</a>
     </div>
 
     <div class="footer-note">
