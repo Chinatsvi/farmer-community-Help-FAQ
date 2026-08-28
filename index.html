@@ -85,6 +85,14 @@ header.top{
   display:grid;
   place-items:center;
   font-size:27px;
+  overflow:hidden;
+}
+
+.top-mark img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .top-text{ flex:1; min-width:0; }
@@ -426,6 +434,14 @@ footer{
   display:grid;
   place-items:center;
   font-size:15px;
+  overflow:hidden;
+}
+
+.footer-brand .mark img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .footer-links{ display:flex; gap:22px; flex-wrap:wrap; }
@@ -489,7 +505,7 @@ input:focus-visible{
 
   <div class="top-inner">
 
-    <div class="top-mark" aria-hidden="true">🌾</div>
+    <div class="top-mark" aria-hidden="true"><img src="favicon-256.png" alt="AgriBase logo"></div>
 
     <div class="top-text">
 
@@ -821,7 +837,7 @@ input:focus-visible{
   <div class="footer-inner">
 
     <div class="footer-brand">
-      <span class="mark" aria-hidden="true">🌾</span>
+      <span class="mark" aria-hidden="true"><img src="favicon-256.png" alt="AgriBase logo"></span>
       Farmer Community
     </div>
 
